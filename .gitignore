@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# PyInstaller
+*.spec.bak
+build_new*/
+dist_new*/
+dist_diag/
+dist_installer/
+
+# C++ build artifacts
+dll/build/
+dll/output/
+*.obj
+*.dll.a
+*.exe
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Runtime logs and data
+*.log
+crash.log
+diag.log
+e2e_out.log
+fsd_packets.log
+
+# User config (contains credentials)
+config/settings.json
+
+# Installer data (large binaries)
+installer/data/
+installer/build_new*/
+installer/dist_new*/
+installer/dist/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# WorkBuddy project data
+.workbuddy/

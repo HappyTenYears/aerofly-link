@@ -1,0 +1,18 @@
+{
+  "callsign": "",
+  "cid": "",
+  "password": "",
+  "realname": "",
+  "server": "sweatbox.vatsim.net",
+  "port": 6809,
+  "model": "",
+  "rating": 1,
+  "mock_lat": "",
+  "mock_lon": "",
+  "mock_alt": "",
+  "servers": [
+    "sweatbox.vatsim.net",
+    "fsd.vatsim.net",
+    "127.0.0.1:6809"
+  ]
+}
