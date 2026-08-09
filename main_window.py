@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-AeroBridge 主窗口类
+Aerofly Link 主窗口类
 整合：连接页（首页） → 工作区（侧边栏 + 地图）
 两阶段布局：连接前只显示连接页，连接成功后才解锁操作面板
 """
@@ -120,7 +120,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("AeroBridge - Aerofly FS 4 联机客户端")
+        self.setWindowTitle("Aerofly Link - Aerofly FS 4 联机客户端")
         self.setMinimumSize(1200, 800)
 
         # === 初始化核心模块 ===

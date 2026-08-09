@@ -152,7 +152,7 @@ class ConnectPage(QFrame):
         header.setContentsMargins(0, 36, 0, 20)
         header.setSpacing(4)
 
-        title = QLabel("AeroBridge")
+        title = QLabel("Aerofly Link")
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         title.setStyleSheet(
             "color: #4CAF50; font-size: 28px; font-weight: bold; letter-spacing: 3px;"

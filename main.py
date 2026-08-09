@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-AeroBridge - Aerofly FS 4 第三方联机客户端
+Aerofly Link - Aerofly FS 4 第三方联机客户端
 主入口文件，初始化 Qt 应用和主窗口
 """
 import sys
@@ -59,7 +59,7 @@ def main():
     )
 
     app = QApplication(sys.argv)
-    app.setApplicationName("AeroBridge")
+    app.setApplicationName("Aerofly Link")
     app.setApplicationVersion("1.0.0")
 
     # 全局深色主题样式

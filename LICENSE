@@ -1,21 +1,16 @@
-MIT License
+GNU LESSER GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
 
-Copyright (c) 2026 AeroBridge Contributors
+Copyright (C) 2026 AeroBridge Contributors
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This project-owned code is licensed under the GNU Lesser General Public
+License, version 3.0 only (LGPL-3.0-only).
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The complete license text is available from the Free Software Foundation:
+https://www.gnu.org/licenses/lgpl-3.0.html
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+SPDX-License-Identifier: LGPL-3.0-only
+
+For the authoritative terms, use the license text published by the Free
+Software Foundation at the URL above. Third-party files may be covered by
+different licenses; see NOTICE.md and the relevant file headers.

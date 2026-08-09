@@ -1,4 +1,8 @@
-# AeroBridge
+# Aerofly Link
+
+> Open-source FSD connectivity client for Aerofly FS 4.
+
+Aerofly Link is an unofficial community project. It is not affiliated with or endorsed by IPACS.
 
 Aerofly FS 4 第三方联机客户端 — 桥接 FSD 协议服务器（VATSIM / 私有服务器），实现位置共享与 ATC 通讯。
 
@@ -28,7 +32,7 @@ Aerofly FS 4 第三方联机客户端 — 桥接 FSD 协议服务器（VATSIM / 
 ## 项目结构
 
 ```
-AeroBridge/
+AeroflyLink/
 ├── main.py                         # 应用入口
 ├── main_window.py                  # 主窗口（连接页 + 工作区）
 ├── requirements.txt                # Python 依赖
@@ -220,4 +224,4 @@ compass_hdg = (90 - math_deg) % 360
 
 ## License
 
-[MIT](LICENSE)
+[LGPL-3.0-only](LICENSE)

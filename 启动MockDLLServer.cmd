@@ -1,11 +1,11 @@
 @echo off
 title AeroBridge Mock DLL Server
 
-set "PYTHON=C:\Users\chush\.workbuddy\binaries\python\versions\3.13.12\python.exe"
+set "PYTHON=python"
 cd /d "%~dp0"
 
-if not exist "%PYTHON%" (
-    echo Python not found: %PYTHON%
+where "%PYTHON%" >nul 2>&1 || (
+    echo Python was not found on PATH.
     pause
     exit /b 1
 )

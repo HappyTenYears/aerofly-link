@@ -31,7 +31,7 @@ logger = logging.getLogger("aerobridge.fsd_client")
 #   - VATSIM 官方网络使用 revision 100
 PROTOCOL_VERSION_LEGACY = 9     # FSD V3.000 draft 9 / Swift private
 PROTOCOL_VERSION_VATSIM = 100   # VATSIM 现代协议
-CLIENT_NAME = "AeroBridge"      # 客户端名称
+CLIENT_NAME = "Aerofly Link"    # 客户端名称
 CLIENT_VERSION = "1.0"          # 客户端版本
 SIMULATOR_TYPE = "Aerofly FS 4" # 模拟器类型
 SIM_TYPE_CODE = "0"             # FSD simtype 标识（0=未知，兼容所有服务器）
