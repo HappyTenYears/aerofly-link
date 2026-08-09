@@ -35,9 +35,9 @@ CLIENT_NAME = "Aerofly Link"    # 客户端名称
 CLIENT_VERSION = "1.0"          # 客户端版本
 SIMULATOR_TYPE = "Aerofly FS 4" # 模拟器类型
 SIM_TYPE_CODE = "0"             # FSD simtype 标识（0=未知，兼容所有服务器）
-DEFAULT_RATING = 1              # 默认飞行员等级（OBS=1）
-                                # rating=1 (OBS) 是最安全的选择，所有服务器都接受。
-                                # 如果你的账号有更高等级，可在连接面板中选择。
+DEFAULT_RATING = 2              # 默认飞行员等级（S1=Student Pilot）
+                                # 对飞行模拟器客户端来说，S1 比 OBS 更合理。
+                                # 如果你的账号等级不同，可在连接面板中选择。
                                 # ⚠️ 服务器会验证 rating 是否匹配 CID，过高会被拒绝。
 
 # ── PBH (Pitch/Bank/Heading) 位打包常量（与 Swift 一致）──
