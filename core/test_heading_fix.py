@@ -6,9 +6,7 @@ import asyncio
 import math
 import sys
 
-sys.path.insert(0, ".")
-
-from dll_bridge import aerofly_heading_to_compass, Telemetry
+from core.dll_bridge import aerofly_heading_to_compass, Telemetry
 
 # 复制 fsd_client 中的 pack_pbh / unpack_pbh（纯函数，避免导入 PyQt6）
 RAD = 180.0 / math.pi
