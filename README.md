@@ -120,7 +120,7 @@ cmake -G "Visual Studio 17 2022" ..
 cmake --build . --config Release
 ```
 
-编译后将 `AeroflyLinkDLL.dll` 放到 `Documents\Aerofly FS 4\external_dll\` 目录。
+编译后将 `AeroflyBridge.dll` 放到 `Documents\Aerofly FS 4\external_dll\` 目录。
 
 ### 打包发布
 

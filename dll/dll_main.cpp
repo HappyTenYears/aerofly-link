@@ -9,7 +9,7 @@
  * 生产环境需替换为 RealAFS4Api（待补充 AFS4 SDK 调用）。
  *
  * 编译（MSVC）:
- *   cl /LD dll_main.cpp /Fe:AeroflyLinkDLL.dll /EHsc
+ *   cl /LD dll_main.cpp /Fe:AeroflyBridge.dll /EHsc
  *
  * 独立测试模式（控制台程序，不生成 DLL）:
  *   cl /DSTANDALONE_TEST dll_main.cpp /Fe:test_dll.exe /EHsc

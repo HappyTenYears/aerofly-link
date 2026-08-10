@@ -285,7 +285,7 @@ class InstallerWizard(QWidget):
             "本程序将安装 Aerofly Link 客户端及 AF4 桥接 DLL\n\n"
             "安装内容包括：\n"
             "  • Aerofly Link 客户端程序\n"
-            "  • AeroflyLinkDLL.dll（自动放置到 AF4 external_dll 目录）\n"
+            "  • AeroflyBridge.dll（自动放置到 AF4 external_dll 目录）\n"
             "  • 桌面和开始菜单快捷方式"
         )
         info.setWordWrap(True)

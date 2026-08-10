@@ -2,7 +2,7 @@
 #  Aerofly Link AFS4 Bridge DLL — CMake 构建配置
 # ════════════════════════════════════════════════════════════════════
 # 生成两个目标：
-#   1. AeroflyLinkDLL.dll   —— 被 AFS4 加载的 Bridge DLL
+#   1. AeroflyBridge.dll   —— 被 AFS4 加载的 Bridge DLL
 #   2. test_dll.exe         —— 独立测试程序（Mock 模式，无需 AFS4）
 #
 # 使用方法:
@@ -12,17 +12,17 @@
 # ════════════════════════════════════════════════════════════════════
 
 cmake_minimum_required(VERSION 3.16)
-project(AeroflyLinkDLL LANGUAGES CXX)
+project(AeroflyBridge LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # ── DLL 目标（被 AFS4 加载）──
-add_library(AeroflyLinkDLL SHARED
+add_library(AeroflyBridge SHARED
     dll_main.cpp
 )
-target_link_libraries(AeroflyLinkDLL PRIVATE ws2_32)
-target_compile_definitions(AeroflyLinkDLL PRIVATE
+target_link_libraries(AeroflyBridge PRIVATE ws2_32)
+target_compile_definitions(AeroflyBridge PRIVATE
     WIN32_LEAN_AND_MEAN
     NOMINMAX
 )
