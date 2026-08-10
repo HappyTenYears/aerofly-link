@@ -32,13 +32,12 @@ logger = logging.getLogger("aerobridge.fsd_client")
 PROTOCOL_VERSION_LEGACY = 9     # FSD V3.000 draft 9 / Swift private
 PROTOCOL_VERSION_VATSIM = 100   # VATSIM 现代协议
 CLIENT_NAME = "Aerofly Link"    # 客户端名称
-CLIENT_VERSION = "1.0"          # 客户端版本
+CLIENT_VERSION = "0.1.0"          # 客户端版本
 SIMULATOR_TYPE = "Aerofly FS 4" # 模拟器类型
 SIM_TYPE_CODE = "0"             # FSD simtype 标识（0=未知，兼容所有服务器）
-DEFAULT_RATING = 2              # 默认飞行员等级（S1=Student Pilot）
-                                # 对飞行模拟器客户端来说，S1 比 OBS 更合理。
+DEFAULT_RATING = 1              # 默认飞行员等级
                                 # 如果你的账号等级不同，可在连接面板中选择。
-                                # ⚠️ 服务器会验证 rating 是否匹配 CID，过高会被拒绝。
+                                # ⚠️ 服务端会验证 Rating 是否匹配 CID，过高会被拒绝。
 
 # ── PBH (Pitch/Bank/Heading) 位打包常量（与 Swift 一致）──
 # Swift C++ bit-field union 布局（先声明字段在 LSB）:
