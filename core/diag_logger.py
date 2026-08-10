@@ -2,7 +2,7 @@
 """
 诊断日志模块
 ============
-统一管理 %APPDATA%/AeroBridge/diag.log 的写入，
+统一管理 %APPDATA%/AeroflyLink/diag.log 的写入，
 避免在多个文件中重复定义 _diag() 函数。
 
 线程安全：使用 threading.Lock 保护文件句柄。
@@ -23,7 +23,7 @@ def _ensure_handle():
         try:
             log_dir = Path(
                 os.environ.get("APPDATA", Path.home() / "AppData" / "Roaming")
-            ) / "AeroBridge"
+            ) / "AeroflyLink"
             log_dir.mkdir(parents=True, exist_ok=True)
             _file_handle = open(
                 str(log_dir / "diag.log"), "a", encoding="utf-8", buffering=1

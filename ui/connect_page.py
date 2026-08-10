@@ -78,7 +78,7 @@ class ConnectPage(QFrame):
         header.setContentsMargins(0, 12, 0, 8)
         header.setSpacing(2)
 
-        title = QLabel("AeroBridge")
+        title = QLabel("Aerofly Link")
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         title.setStyleSheet(
             "color: #4CAF50; font-size: 18px; font-weight: bold; letter-spacing: 1px;"
@@ -234,7 +234,7 @@ class ConnectPage(QFrame):
         outer.addWidget(scroll, 1)
 
         # 底部提示
-        hint = QLabel("请确保已在 Documents\\Aerofly FS 4\\external_dll\\ 放置 AeroBridgeDLL.dll")
+        hint = QLabel("请确保已在 Documents\\Aerofly FS 4\\external_dll\\ 放置 AeroflyLinkDLL.dll")
         hint.setAlignment(Qt.AlignmentFlag.AlignCenter)
         hint.setStyleSheet("color: #555; font-size: 12px; padding: 16px;")
         outer.addWidget(hint)

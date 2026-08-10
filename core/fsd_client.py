@@ -41,7 +41,7 @@ from core.fsd_protocol import (
     decimal_to_packed_coord,
 )
 
-logger = logging.getLogger("aerobridge.fsd_client")
+logger = logging.getLogger("aerofly_link.fsd_client")
 
 
 class FSDClient(QObject):
@@ -497,7 +497,7 @@ class FSDClient(QObject):
                 _p, _b, _h, _og = unpack_pbh(pbh)
                 import os as _os
                 from pathlib import Path as _P
-                _log_dir = _P(_os.environ.get("APPDATA", _P.home() / "AppData" / "Roaming")) / "AeroBridge"
+                _log_dir = _P(_os.environ.get("APPDATA", _P.home() / "AppData" / "Roaming")) / "AeroflyLink"
                 _log_dir.mkdir(parents=True, exist_ok=True)
                 with open(str(_log_dir / "fsd_packets.log"), "a", encoding="utf-8") as _f:
                     from datetime import datetime as _dt

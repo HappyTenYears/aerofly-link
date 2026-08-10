@@ -26,7 +26,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Callable, Optional
 
-logger = logging.getLogger("aerobridge.dll_bridge")
+logger = logging.getLogger("aerofly_link.dll_bridge")
 
 # ── 诊断日志（使用共享模块）─────────────────────────────────────
 from core.diag_logger import diag as _diag

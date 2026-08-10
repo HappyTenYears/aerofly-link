@@ -1,6 +1,6 @@
 # -*- mode: python ; coding: utf-8 -*-
 """
-AeroBridge PyInstaller 打包配置 — 文件夹版（更快启动，用于制作安装包）
+Aerofly Link PyInstaller 打包配置 — 文件夹版（更快启动，用于制作安装包）
 """
 
 import sys
@@ -71,7 +71,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='AeroBridge',
+    name='AeroflyLink',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -96,5 +96,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='AeroBridge',
+    name='AeroflyLink',
 )

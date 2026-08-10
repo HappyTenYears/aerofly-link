@@ -32,7 +32,7 @@ from main_window import MainWindow
 from ui.styles import APP_QSS
 
 # ── 全局异常捕获 ──────────────────────────────────
-CRASH_LOG = Path(__file__).parent.parent / "crash.log" if not getattr(sys, 'frozen', False) else Path(os.environ.get("APPDATA", Path.home())) / "AeroBridge" / "crash.log"
+CRASH_LOG = Path(__file__).parent.parent / "crash.log" if not getattr(sys, 'frozen', False) else Path(os.environ.get("APPDATA", Path.home())) / "AeroflyLink" / "crash.log"
 
 def _excepthook(exc_type, exc_value, exc_tb):
     """捕获所有未处理的异常，写入 crash.log"""
@@ -60,7 +60,7 @@ def main():
     )
 
     app = QApplication(sys.argv)
-    app.setApplicationName("AeroBridge")
+    app.setApplicationName("Aerofly Link")
     app.setApplicationVersion("1.0.0")
 
     # 全局深色主题样式（使用共享样式模块）

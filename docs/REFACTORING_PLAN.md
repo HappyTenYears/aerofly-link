@@ -1,4 +1,4 @@
-# AeroBridge 重构预备文档
+# Aerofly Link 重构预备文档
 
 > 版本: 1.0  
 > 日期: 2026-08-09  
@@ -10,7 +10,7 @@
 
 ### 1.1 项目定位
 
-**AeroBridge** 是一个面向 Aerofly FS 4 飞行模拟器的第三方联机客户端，通过 FSD (Flight Simulator Daemon) 协议接入 VATSIM 多人网络，实现飞行员之间的实时位置共享、ATC 文字通讯和应答机交互。
+**Aerofly Link** 是一个面向 Aerofly FS 4 飞行模拟器的第三方联机客户端，通过 FSD (Flight Simulator Daemon) 协议接入 VATSIM 多人网络，实现飞行员之间的实时位置共享、ATC 文字通讯和应答机交互。
 
 ### 1.2 核心功能需求
 
@@ -24,7 +24,7 @@
 | F6 | 通讯日志        | 显示 ATC 文字消息、系统状态、调试信息                                                             |
 | F7 | 配置持久化       | 自动保存/加载连接配置和飞行计划设置                                                                |
 | F8 | Mock DLL 模式 | 非正版 AF4 无法使用 external DLL API 时可模拟遥测数据进行测试                                        |
-| F9 | 打包发布        | PyInstaller 单文件夹打包为 AeroBridge.exe                                                |
+| F9 | 打包发布        | PyInstaller 单文件夹打包为 Aerofly Link.exe                                                |
 
 ### 1.3 技术栈
 

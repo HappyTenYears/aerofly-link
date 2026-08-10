@@ -48,7 +48,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("AeroBridge - Aerofly FS 4 联机客户端")
+        self.setWindowTitle("Aerofly Link - Aerofly FS 4 联机客户端")
         # 灵活最小尺寸：不再卡死 1200x800
         self.setMinimumSize(300, 480)
 
@@ -402,7 +402,7 @@ class MainWindow(QMainWindow):
                     "1. 启动 Aerofly FS 4 并进入驾驶舱\n"
                     "2. AeroflyBridge.dll 已放入 external_dll 文件夹\n"
                     "3. 非正版游戏可能不支持 external DLL API\n"
-                    "提示: 先启动游戏再启动 AeroBridge")
+                    "提示: 先启动游戏再启动 Aerofly Link")
 
     # ──────────────────────────────────────────────
     # 信号槽处理
@@ -426,7 +426,7 @@ class MainWindow(QMainWindow):
             self.status_bar.set_callsign(f"呼号: {self.connect_page.get_config().get('callsign', '---')}")
             self.connect_page.set_connected(True)
             self.left_stack.setCurrentIndex(1)
-            ws.log_panel.add_message("AeroBridge", "SYSTEM", message)
+            ws.log_panel.add_message("Aerofly Link", "SYSTEM", message)
 
         elif status == "disconnected":
             self.status_bar.set_connection_status("● 未连接", "gray")
@@ -437,7 +437,7 @@ class MainWindow(QMainWindow):
             self.connect_page.set_connecting(False)
             ws.set_connected_display(False)
             self.left_stack.setCurrentIndex(0)
-            ws.log_panel.add_message("AeroBridge", "SYSTEM", message)
+            ws.log_panel.add_message("Aerofly Link", "SYSTEM", message)
             if not self._user_disconnect:
                 QMessageBox.warning(self, "连接已断开", f"与服务器的连接意外断开：\n\n{message}")
             self._user_disconnect = False
@@ -456,7 +456,7 @@ class MainWindow(QMainWindow):
 
         elif status == "connecting":
             self.status_bar.set_connection_status("● 连接中...", "orange")
-            ws.log_panel.add_message("AeroBridge", "SYSTEM", message)
+            ws.log_panel.add_message("Aerofly Link", "SYSTEM", message)
 
     def _on_atc_message(self, source: str, dest: str, message: str):
         self.workspace.log_panel.add_message(source, dest, message)
