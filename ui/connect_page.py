@@ -234,7 +234,7 @@ class ConnectPage(QFrame):
         outer.addWidget(scroll, 1)
 
         # 底部提示
-        hint = QLabel("请确保已在 Documents\\Aerofly FS 4\\external_dll\\ 放置 AeroflyLinkDLL.dll")
+        hint = QLabel("请确保已在 Documents\\Aerofly FS 4\\external_dll\\ 放置 AeroflyBridge.dll")
         hint.setAlignment(Qt.AlignmentFlag.AlignCenter)
         hint.setStyleSheet("color: #555; font-size: 12px; padding: 16px;")
         outer.addWidget(hint)
